@@ -1,8 +1,8 @@
-variable "vpc_id"     { }
+variable "vpc_id"          { }
 variable "subnet_cidr"     { }
 variable "name_prefix"     { }
-variable "app_tags"     { }
-variable "slacko-sshkey"     { }
+variable "app_tags"        { }
+variable "slacko-sshkey"   { }
 
 module "slacko-app" {
   source = "./modules/terraform-app"
