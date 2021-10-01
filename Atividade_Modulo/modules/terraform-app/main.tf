@@ -38,7 +38,6 @@ resource "aws_instance" "slacko-app" {
 
 }
 
-
 resource "aws_instance" "mongodb" {
 
    ami = data.aws_ami.slacko-app.id
