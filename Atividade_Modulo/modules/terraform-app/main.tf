@@ -33,7 +33,7 @@ resource "aws_instance" "slacko-app" {
             {
             "Name" = format("%s-slacko-app", var.name_prefix)
             })
-  key_name = aws_key_pair.slacko-sshkey.id ## quando referencia outro recurso que criou
+  key_name = aws_key_pair.slacko-sshkey.id
   user_data_base64 = "valor da chave"  
 
 }
@@ -50,7 +50,7 @@ resource "aws_instance" "mongodb" {
             "Name" = format("%s-mongodb", var.name_prefix)
             })
   
-  key_name = aws_key_pair.slacko-sshkey.id ## quando referencia outro recurso que criou
+  key_name = aws_key_pair.slacko-sshkey.id
   user_data_base64 = "valor da chave"
 
 }
